@@ -1,0 +1,25 @@
+### Get all books
+GET http://localhost:3000/books
+
+### Add a new book
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien"
+}
+
+### Get a single book
+GET http://localhost:3000/books/1
+
+### Update a book
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+  "title": "The Lord of the Rings"
+}
+
+### Delete a book
+DELETE http://localhost:3000/books/1
